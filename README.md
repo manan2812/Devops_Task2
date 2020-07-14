@@ -53,6 +53,8 @@ Now after creating a github repo and adding all the required files in it we will
 
 ### Step 4: Creating Job1 in Jenkins
 Job1 will pull the github repository automatically when the developer push any update
+![](screenshots/job1.1.png)
+![](screenshots/job1.2.png)
 
 ### Step 5: Creating Job2 in Jenkins
 Job2 will look at the code or program file, and then automatically start the respective language interpreter installed  container to deploy code i.e If code is of PHP, then Jenkins should start the container that has PHP already installed and if the code is of HTML then jenkins should start container with httpd.
@@ -62,27 +64,33 @@ You have to pull httpd image for HTML files or personalised php Images from dock
 *#docker pull httpd
 
 *#docker pull vimal13/apache-webserver-php
+![](screenshots/dockerimages.PNG)
 
 Following is the configuration for Job 2
-
+![](screenshots/job2.1.png)
+![](screenshots/job2.2.png)
 
 Here *chroot* is used to replicate the directory of docker container to our BaseOS
 
 If everything is working fine You can check the Webpages have been deployed
+![](screenshots/job2.3.png)
 
 ### Step 6: Creating Job3 in Jenkins
 Job3 will Test if our websites are working or not
+![](screenshots/job3.1.png)
+![](screenshots/job3op.png)
 
 ### Step 7: Creating Job4 in Jenkins
 Job4 will send the confirmation mail to the developer using python file
-
+![](screenshots/job4.png)
 
 ### Step 8: Creating Job5 in Jenkins
 This job will monitor If containers where websites are running. If it fails due to any reason then this job should automatically start that respective container again.
-
+![](screenshots/job5.1.png)
+![](screenshots/job5.2.png)
 
 If everything working fine then console output of Job5 will be
-
+![](screenshots/job5op.png)
 
 ### This is all in this task. Thankyou for Reading my blog
 
