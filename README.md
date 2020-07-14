@@ -30,10 +30,12 @@ To create a dockerfile I have created a new folder named mydocker
 *#gedit Dockerfile*
 
 We will create Docker image using centos image pulled from docker hub as shown in the image below
+![](screenshots/dockerfile.PNG)
 
 Now, run command to create image
 
 *#docker build -t task2_mlops:v1 /mydocker*
+![](screenshots/1.PNG)
 
 ### Step 2: Running a container from the image we created
 Use the following command 
@@ -42,6 +44,7 @@ Use the following command
 - privileged is used to give container root capabilities of a host machine, allowing the ability to access resources which are not accessible in ordinary containers
 - we have set the port 9999 of host machine to access the port 8080 of docker container on which the jenkins works
 - -v to connect / of host machine to /host of docker container
+![](screenshots/2.PNG)
 
 ### Step 3: Setting up of Jenkins 
 - Copy the password given after running the docker image.
