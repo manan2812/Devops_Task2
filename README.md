@@ -46,8 +46,10 @@ Use the following command
 ### Step 3: Setting up of Jenkins 
 - Copy the password given after running the docker image.
 - Go to the browser and then enter "Ip of host machine:9999"
+![](screenshots/4.PNG)
 
 After successful completion you will get
+![](screenshots/startpage.png)
 
 Now after creating a github repo and adding all the required files in it we will configure jenkins
 
